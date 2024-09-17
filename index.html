@@ -13,57 +13,113 @@
 
 <body>
 
-    <div class="nav">   
-                <div class="on"><a href="index.html">About</a></div>        
-                <div class="off"><a href="publications.html">Publications</a></div>
-                <div class="off"> <a href="CV Matthew vonAllmen.pdf" target="_blank">CV</a></div> 
-                <div class="off"><a href="teaching.html">Teaching</a></div>
-                <!-- <div class="off"><a href="seminar.html">Seminar</a></div>                                -->
-    </div> 
+<div class="nav">
+    <div class="on"><a href="index.html">About</a></div>        
+    <div class="off"><a href="publications.html">Publications</a></div>
+    <div class="off"> <a href="Linked documents/CV Matthew vonAllmen.pdf" target="_blank">CV</a></div> 
+    <div class="off"><a href="teaching.html">Teaching</a></div>
+    <!-- <div class="off"><a href="seminar.html">Seminar</a></div>                                -->
+</div>
     
-    <div id="empty"></div>
-    
+<div id="empty"></div>
+
 <div id="contentpane">
-    
     <div id="content">
+        <div id="pagetitle"> 
+            <div id="name">
+                <h1>Matthew vonAllmen</h1>
+                <p>PhD Student<br/>
+                Computer Science, Northwestern University<br/>
+                matthewvonallmen2026[at]u.northwestern.edu</p>
+            </div>
+            
+            <div id="headerimg"><img src="Self portrait post crop compressed twice.png" width="150px"></div>
+        </div>
 
-    <div id="pagetitle"> 
-        
-    <div id="name"> <h1>Matthew vonAllmen</h1>
-    <p>PhD Student<br/>
-    Computer Science, Northwestern University<br/>
-    matthewvonallmen2026[at]u.northwestern.edu</p></div>
-    
-    <div id="headerimg"><img src="Self portrait post crop compressed twice.png" width="150px"></div>
-    
+
+        <div>
+            <h4>Hello there!</h4>
+
+            <p>I'm a fifth-year PhD student at Northwestern University and was a visiting student researcher at Stanford University for the 2023-2024 academic year. I am advised by Professor <a href="https://sites.northwestern.edu/hartline/" target="_blank">Jason Hartline</a>.</p>
+
+            <p>My primary research is in mechanism design, though my background as an undergraduate was in machine learning and economics. Somewhat idiosyncratically for someone in CS theory, I'm also knowledgeable about low-level/assembly programming.</p>
+
+            <p>Here are some projects I've worked on:</p>
+
+            <h3>GPU Allocation</h3>
+            <p>It takes compute resources to train machine learning models, such as LLMs. An enterprise that rents costly GPUs from a cloud provider needs some way to provision them to its employees on demand, who can then use them to train models.</p>
+
+            <p>On-demand provisioning should ideally</p>
+            <ol>
+                <li>Leave few rented GPUs idle, since they have already been paid for. Unprovisioned GPUs represent wasted resources that the enterprise would have preferred not to rent.</li>
+                <li>Rarely prevent employees from accessing GPUs in periods of high demand. It's desirable to rent enough GPUs, or effectively ration the ones the enterprise has, to make supply constraints a non-issue.</li>
+            </ol>
+
+            <p>There is a fundamental tradeoff between these two properties. A project with Adobe Research studying that tradeoff would eventually become the basis for <a href="https://arxiv.org/abs/2402.19292" target="_blank">Fundamental Limits of Throughput and Availability</a>, published in <i>EC 2024</i>.</p>
+
+            <h3>Untying Knots with Neural Networks</h3>
+            <p>As an undergraduate, I did research with Professor David Bachman, a topologist at Pitzer College. We analyzed whether neural networks with custom-designed layers could correctly perturb heavily tangled polygonal knots until they became visually indistinguishable from the unknot.</p>
+            
+            <p>In other words, our goal was to take this:</p>
+
+            <img src="Knot images/Lissajous Unknot pretangled.png" width="250px">
+
+            <p>... and untangle it into this:</p>
+
+            <img src="Knot images/Lissajous Unknot trial 3.png" width="250px">
+
+
+            <p>This was an interdisciplinary project that combined insights from knot theory and machine learning. The final paper can be found <a href="Linked documents/Untying Knots with Neural Nets.pdf" target="_blank">here</a>.</p>
+
+            <h3>N64 Trigonometry: The Folded Polynomial</h3>
+            <p>I've acquired some amount of internet fame for my work in assembly programming and low-level optimization.</p>
+
+            <p>Trig functions, like sine and cosine, are used widely in games programming for important physics and graphics calculations. Computing approximations to these functions that are both</p>
+            <ol>
+                <li>accurate, and</li>
+                <li>performant</li>
+            </ol>
+            <p>is a mostly solved problem on modern hardware, but for <a href="https://en.wikipedia.org/wiki/R4200" target="_blank">some older CPUs</a> with extreme performance constraints, it poses a major challenge.</p>
+
+            <p>After learning this was an open problem, I invented a new algorithm for computing sine and cosine approximations that achieved over <b>90 times improved accuracy</b> compared to the state of the art on the VR4300, <b>without sacrificing any performance</b>. It takes advantage of several unique features of this CPU and its instruction set architecture (e.g. branch delay slots and no branch predictor), as well as clever use of modular arithmetic.</p>
+                
+            <p>I then collaborated with famed N64 modder Kaze Emanuar to implement this algorithm in his new engine. <a href="https://www.youtube.com/watch?v=hffgNRfL1XY" target="_blank">His video</a> covers the saga in detail. If you're interested, I'd encourage you to check it out! I'm quite passionate about quality educational content, and he does a great job explaining an otherwise impenetrable topic (low level programming) to a broad audience.</p>
+
+            <!-- <p>This is a story, and I'm going to explain it.</p> -->
+            <p style="text-align:right"><a href="https://www.youtube.com/watch?v=hffgNRfL1XY" target="_blank"><img src="The Folded Polynomial.jpg" width="300px"></a></p>
+            
+            <p>After this initial collaboration, I later invented an improved arctangent approximation algorithm and implemented it as well. Video forthcoming.</p>
+
+            <hr style="display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 1em 0;
+            padding: 0;"/>
+
+            <h4>Other Projects</h4>
+            <p>This is just a small sample of my broader research profile. I've <a href="https://github.com/SilasLock/Hilbert-Compression/wiki/Compression-Algorithm" target="_blank">invented a compression algorithm</a>, investigated the <a href="Linked documents/Are Prediction Markets Bayesian.pdf">Bayesian characteristics of prediction markets</a>, and worked on other <a href="publications.html">various interdisciplinary projects</a> between economics and computer science.</p>
+
+            <p>If you have questions about my work or are interested in collaborating, please reach out to me via email!</p>
+
+            <p></p>
+
+            <!-- <h4>About Me</h4>
+            
+            <p>I am a fourth-year PhD student at Northwestern University, and will be a visiting student researcher at Stanford University for the 2023-2024 academic year. I am advised by Professor <a href="https://sites.northwestern.edu/hartline/" target="_blank">Jason Hartline</a>.</p>
+            <p>As an undergraduate, I attended Pitzer College, double majoring in Joint Math/CS (through Harvey Mudd College) and Mathematical Economics (at Pitzer).</p>
+            
+            <p>I have interdisciplinary research interests between computer science and economics, and my current research is split between multidimensional mechanism design and prophet inequalities.</p> -->
+        </div>
     </div>
-    
- 
-
-<div>
-      <h4>About Me</h4>
-      
-      <p>I am a fourth-year PhD student at Northwestern University, and will be a visiting student researcher at Stanford University for the 2023-2024 academic year. I am advised by Professor <a href="https://sites.northwestern.edu/hartline/" target="_blank">Jason Hartline</a>.</p>
-      <p>As an undergraduate, I attended Pitzer College, double majoring in Joint Math/CS (through Harvey Mudd College) and Mathematical Economics (at Pitzer).</p>
-      
-      <p>I have interdisciplinary research interests between computer science and economics, and my current research is split between multidimensional mechanism design and prophet inequalities.</p>
 </div>
 
+<div id="buffer"></div>
+<div id="footer">   <div>Template by Kira Goldner&#169;</div> </div>
+<!-- If you really feel uncomfortable with giving me credit by name on your site, rather than deleting, please at lease uncomment and use the following logo credit. -->
+<!--div id="footer"><div id="logo"> <a href="https://www.kiragoldner.com/" target="_blank"><img src="https://www.kiragoldner.com/favicon.png" width="12pt"/></a></div><div>&#169; Template</div-->
 
-   
-
-
-    </div>
-
-
-</div>
-
-    <div id="buffer"></div>
-    <div id="footer">   <div>Template by Kira Goldner&#169;</div> </div>
-    <!-- If you really feel uncomfortable with giving me credit by name on your site, rather than deleting, please at lease uncomment and use the following logo credit. -->
-    <!--div id="footer"><div id="logo"> <a href="https://www.kiragoldner.com/" target="_blank"><img src="https://www.kiragoldner.com/favicon.png" width="12pt"/></a></div><div>&#169; Template</div-->
-
-  </body>
+</body>
 
 
 </html>
