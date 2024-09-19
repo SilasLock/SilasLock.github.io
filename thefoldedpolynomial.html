@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+	<title>
+		Matthew vonAllmen
+	</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Vollkorn&display=swap">
+	<link rel="stylesheet" href="main.css" type="text/css"/>
+</head>
+
+<body>
+
+<div class="nav">   
+    <div class="off"><a href="index.html">About</a></div>        
+    <div class="off"><a href="publications.html">Publications</a></div>
+    <div class="off"> <a href="Linked documents/CV Matthew vonAllmen.pdf" target="_blank">CV</a></div> 
+    <div class="off"><a href="teaching.html">Teaching</a></div>
+    <!-- <div class="on"><a href="seminar.html">Seminar</a></div>                                -->
+</div> 
+
+<div id="empty"></div>
+
+<div id="contentpane">    
+    <div id="content">
+        <div>
+            <h3>N64 Trigonometry: The Folded Polynomial</h3>
+            <p>I've acquired some amount of internet fame for my work in assembly programming and low-level optimization.</p>
+
+            <p>Trig functions, like sine and cosine, are used widely in games programming for important physics and graphics calculations. Computing approximations to these functions that are both</p>
+            <ol>
+                <li>accurate, and</li>
+                <li>performant</li>
+            </ol>
+            <p>is a mostly solved problem on modern hardware, but for <a href="https://en.wikipedia.org/wiki/R4200" target="_blank">some older CPUs</a> with extreme performance constraints, it poses a major challenge.</p>
+
+            <p>After learning this was an open problem, I invented a new algorithm for computing sine and cosine approximations that achieved over <b>90 times improved accuracy</b> compared to the state of the art on the VR4300, <b>without sacrificing any performance</b>. It takes advantage of several unique features of this CPU and its instruction set architecture (e.g. branch delay slots and no branch predictor), as well as clever use of modular arithmetic.</p>
+                
+            <p>I then collaborated with famed N64 modder Kaze Emanuar to implement this algorithm in his new engine. <a href="https://www.youtube.com/watch?v=hffgNRfL1XY" target="_blank">His video</a> covers the saga in detail. If you're interested, I'd encourage you to check it out! I'm quite passionate about quality educational content, and he does a great job explaining an otherwise impenetrable topic (low level programming) to a broad audience.</p>
+
+            <!-- <p>This is a story, and I'm going to explain it.</p> -->
+            <p style="text-align: right;"><a href="https://www.youtube.com/watch?v=hffgNRfL1XY" target="_blank"><img src="The Folded Polynomial.jpg" width="300px" style="float: right; margin-left: 10px;"></a></p>
+            
+            <p>After this initial collaboration, I later invented an improved arctangent approximation algorithm and implemented it as well. Video forthcoming.</p>
+
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+</div>
+
+<div id="buffer"></div>
+<div id="footer">   <div>Template by Kira Goldner&#169;</div> </div>
+<!-- If you really feel uncomfortable with giving me credit by name on your site, rather than deleting, please at lease uncomment and use the following logo credit. -->
+<!--div id="footer"><div id="logo"> <a href="https://www.kiragoldner.com/" target="_blank"><img src="https://www.kiragoldner.com/favicon.png" width="12pt"/></a></div><div>&#169; Template</div-->
+
+</body>
+
+
+</html>

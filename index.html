@@ -3,7 +3,6 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
-	
 	<title>
 		Matthew vonAllmen
 	</title>
@@ -60,35 +59,27 @@
             <h3>Untying Knots with Neural Networks</h3>
             <p>As an undergraduate, I did research with Professor David Bachman, a topologist at Pitzer College. We analyzed whether neural networks with custom-designed layers could correctly perturb heavily tangled polygonal knots until they became visually indistinguishable from the unknot.</p>
             
-            <p>In other words, our goal was to take this:</p>
+            <div style="display: flex; justify-content: space-between;">
+                <div>
+                    <p style="margin: 0; padding-bottom: 5px;">In other words, our goal was to take this:</p>
+                    <img src="Knot images/Lissajous Unknot pretangled.png" width="250px">
+                </div>
+                <div>
+                    <p style="margin: 0; padding-bottom: 5px;">... and untangle it into this:</p>
+                    <img src="Knot images/Lissajous Unknot trial 3.png" width="250px">
+                </div>
+            </div>
+
+            <!-- <p>In other words, our goal was to take this:</p>
 
             <img src="Knot images/Lissajous Unknot pretangled.png" width="250px">
 
             <p>... and untangle it into this:</p>
 
-            <img src="Knot images/Lissajous Unknot trial 3.png" width="250px">
+            <img src="Knot images/Lissajous Unknot trial 3.png" width="250px"> -->
 
 
             <p>This was an interdisciplinary project that combined insights from knot theory and machine learning. The final paper can be found <a href="Linked documents/Untying Knots with Neural Nets.pdf" target="_blank">here</a>.</p>
-
-            <h3>N64 Trigonometry: The Folded Polynomial</h3>
-            <p>I've acquired some amount of internet fame for my work in assembly programming and low-level optimization.</p>
-
-            <p>Trig functions, like sine and cosine, are used widely in games programming for important physics and graphics calculations. Computing approximations to these functions that are both</p>
-            <ol>
-                <li>accurate, and</li>
-                <li>performant</li>
-            </ol>
-            <p>is a mostly solved problem on modern hardware, but for <a href="https://en.wikipedia.org/wiki/R4200" target="_blank">some older CPUs</a> with extreme performance constraints, it poses a major challenge.</p>
-
-            <p>After learning this was an open problem, I invented a new algorithm for computing sine and cosine approximations that achieved over <b>90 times improved accuracy</b> compared to the state of the art on the VR4300, <b>without sacrificing any performance</b>. It takes advantage of several unique features of this CPU and its instruction set architecture (e.g. branch delay slots and no branch predictor), as well as clever use of modular arithmetic.</p>
-                
-            <p>I then collaborated with famed N64 modder Kaze Emanuar to implement this algorithm in his new engine. <a href="https://www.youtube.com/watch?v=hffgNRfL1XY" target="_blank">His video</a> covers the saga in detail. If you're interested, I'd encourage you to check it out! I'm quite passionate about quality educational content, and he does a great job explaining an otherwise impenetrable topic (low level programming) to a broad audience.</p>
-
-            <!-- <p>This is a story, and I'm going to explain it.</p> -->
-            <p style="text-align:right"><a href="https://www.youtube.com/watch?v=hffgNRfL1XY" target="_blank"><img src="The Folded Polynomial.jpg" width="300px"></a></p>
-            
-            <p>After this initial collaboration, I later invented an improved arctangent approximation algorithm and implemented it as well. Video forthcoming.</p>
 
             <hr style="display: block;
             height: 1px;
@@ -98,7 +89,9 @@
             padding: 0;"/>
 
             <h4>Other Projects</h4>
-            <p>This is just a small sample of my broader research profile. I've <a href="https://github.com/SilasLock/Hilbert-Compression/wiki/Compression-Algorithm" target="_blank">invented a compression algorithm</a>, investigated the <a href="Linked documents/Are Prediction Markets Bayesian.pdf">Bayesian characteristics of prediction markets</a>, and worked on other <a href="publications.html">various interdisciplinary projects</a> between economics and computer science.</p>
+            <p>This is just a small sample of my broader research profile. I've <a href="https://github.com/SilasLock/Hilbert-Compression/wiki/Compression-Algorithm" target="_blank">invented a compression algorithm</a>, investigated the <a href="Linked documents/Are Prediction Markets Bayesian.pdf">Bayesian characteristics of prediction markets</a>, and worked on various <a href="publications.html">other interdisciplinary projects</a> between economics and computer science.</p>
+
+            <p>I've <a href="thefoldedpolynomial.html">acquired some amount of internet fame</a> for my work in assembly programming and low-level optimization, too.</p>
 
             <p>If you have questions about my work or are interested in collaborating, please reach out to me via email!</p>
 
